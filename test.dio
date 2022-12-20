@@ -28,7 +28,7 @@
                 <mxCell id="25" value="first_name_kana" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="11">
                     <mxGeometry y="146" width="160" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" value="birthday" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="11">
+                <mxCell id="26" value="birth_day" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="11">
                     <mxGeometry y="166" width="160" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="33" value="items" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
