@@ -64,7 +64,7 @@
                 <mxCell id="45" value="buyers" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
                     <mxGeometry x="600" y="512" width="160" height="166" as="geometry"/>
                 </mxCell>
-                <mxCell id="46" value="post_code_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="45">
+                <mxCell id="46" value="post_code" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="45">
                     <mxGeometry y="26" width="160" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="47" value="prefecture_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="45">
