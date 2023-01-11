@@ -19,13 +19,8 @@ class ItemsController < ApplicationController
     end
   end
 
-  def show
-  end
-
   def edit
-    unless @item.user_id == current_user.id
-      redirect_to action: :index
-    end
+    redirect_to action: :index unless @item.user_id == current_user.id
   end
 
   def update
