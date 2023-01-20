@@ -9,7 +9,10 @@ class PurchaseRecordBuyer
     validates :address
     validates :phone_number, format: {with: /\A[0-9]{11}\z/}, length: {maximum: 11}
     validates :token
+    validates :user_id
+    validates :item_id
   end
+
 
   def save
     purchase_record = PurchaseRecord.create(item_id: item_id, user_id: user_id)

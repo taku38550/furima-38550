@@ -2,12 +2,14 @@ require 'rails_helper'
 
 RSpec.describe PurchaseRecordBuyer, type: :model do
   before do
-    @purchase_record_buyer = FactoryBot.build(:purchase_record_buyer)
+    user = FactoryBot.create(:user)
+    item = FactoryBot.create(:item)
+    @purchase_record_buyer = FactoryBot.build(:purchase_record_buyer, item_id: item.id, user_id: user.id)
   end
 
   describe "購入者情報の保存" do
     context "購入者情報の保存ができる場合" do
-      it "post_code, prefecture_id, city, address, building_name, phone_number, tokenが存在すると保存できる" do
+      it "post_code, prefecture_id, city, address, building_name, phone_number, token, user_id, item_idが存在すると保存できる" do
         expect(@purchase_record_buyer).to be_valid
       end
 
@@ -79,7 +81,19 @@ RSpec.describe PurchaseRecordBuyer, type: :model do
       end
 
       it "tokenが空だと保存できない" do
-        @purchase_record_buyer.phone_number = 123-1234-5678
+        @purchase_record_buyer.token = ''
+        @purchase_record_buyer.valid?
+        expect(@purchase_record_buyer.errors.full_messages).to include()
+      end
+
+      it "user_idが空だと保存できない" do
+        @purchase_record_buyer.user_id = ''
+        @purchase_record_buyer.valid?
+        expect(@purchase_record_buyer.errors.full_messages).to include()
+      end
+
+      it "item_idが空だと保存できない" do
+        @purchase_record_buyer.item_id = ''
         @purchase_record_buyer.valid?
         expect(@purchase_record_buyer.errors.full_messages).to include()
       end
