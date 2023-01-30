@@ -39,7 +39,7 @@ set :repo_url, "git@example.com:me/my_repo.git"
 # set :ssh_options, verify_host_key: :secure
 
 # capistranoのバージョンを記載。固定のバージョンを利用し続け、バージョン変更によるトラブルを防止する
-lock '3.1'
+lock '3.17.1'
 
 # Capistranoのログの表示に利用する
 set :application, 'furima-38550'
